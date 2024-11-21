@@ -1,3 +1,5 @@
+/* Note that this program works properly when run in the console and is intended for the same use */
+
 using System;
 
 // This is a namespace that provides the features that are useful in
@@ -62,7 +64,7 @@ namespace Guess_the_number {
             }
             while (correct_attempts != wordLength) {
                 Console.Clear();
-                Console.WriteLine(word_to_guess);
+                // Console.WriteLine(word_to_guess);
                 Console.WriteLine($"Enter your guessd letter! It is of type {word_category}. You have {lives} lives!");
                 Console.WriteLine(unrevealed);
                 user_ch = Console.ReadKey().KeyChar;
